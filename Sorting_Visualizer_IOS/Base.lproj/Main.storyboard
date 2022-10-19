@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sorting_Visualizer_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="iNi-RX-8KW">
+                                <rect key="frame" x="16" y="47" width="343" height="731"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorting Visualizer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02V-nB-viC">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T2e-hM-OYC">
+                                        <rect key="frame" x="0.0" y="79" width="343" height="2.6666666666666714"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wfJ-pz-zPg">
+                                        <rect key="frame" x="0.0" y="123.33333333333334" width="343" height="2.6666666666666714"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PBB-6D-pFE">
+                                        <rect key="frame" x="0.0" y="168" width="343" height="2.6666666666666572"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZtX-Ce-l1z">
+                                        <rect key="frame" x="0.0" y="212.33333333333331" width="343" height="2.6666666666666572"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Iyc-qL-NjH">
+                                        <rect key="frame" x="0.0" y="257" width="343" height="2.6666666666666856"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-jl-meG">
+                                        <rect key="frame" x="0.0" y="301.33333333333331" width="343" height="2.6666666666666856"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0To-QS-WIX">
+                                        <rect key="frame" x="0.0" y="346" width="343" height="2.6666666666666856"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OL2-Ha-rtc">
+                                        <rect key="frame" x="0.0" y="390.33333333333331" width="343" height="2.6666666666666856"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o2e-Mh-87j">
+                                        <rect key="frame" x="0.0" y="435" width="343" height="2.6666666666666856"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7LB-BV-zdw">
+                                        <rect key="frame" x="0.0" y="479.33333333333337" width="343" height="2.6666666666666856"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dHQ-9i-pE6">
+                                        <rect key="frame" x="0.0" y="524" width="343" height="2.6666666666666288"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rhR-iM-iQI">
+                                        <rect key="frame" x="0.0" y="568.33333333333337" width="343" height="2.6666666666666288"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mu8-Ne-oL9">
+                                        <rect key="frame" x="0.0" y="613" width="343" height="2.6666666666666288"/>
+                                        <color key="trackTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ro2-6n-ZwQ">
+                                        <rect key="frame" x="0.0" y="657.33333333333337" width="343" height="73.666666666666629"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nTA-Xr-YAi">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="34.333333333333336"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LM-ad-aBF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="169" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Bubble Sort"/>
+                                                        <connections>
+                                                            <action selector="bubbleSortPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ObG-b9-Wsk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r3-YQ-ctq">
+                                                        <rect key="frame" x="174" y="0.0" width="169" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Selection Sort"/>
+                                                        <connections>
+                                                            <action selector="selectionSortPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2TB-Gb-jgt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="S6E-eF-MtZ">
+                                                <rect key="frame" x="0.0" y="39.333333333333258" width="343" height="34.333333333333343"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncT-19-viZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="169" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Bubble Sort"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3e0-FQ-9BP">
+                                                        <rect key="frame" x="174" y="0.0" width="169" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                                        <connections>
+                                                            <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5F5-b5-7Nx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="02V-nB-viC" firstAttribute="centerX" secondItem="iNi-RX-8KW" secondAttribute="centerX" id="Zgx-23-LfB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="iNi-RX-8KW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Ny-1H-h0q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iNi-RX-8KW" secondAttribute="trailing" constant="16" id="H6l-cv-hii"/>
+                            <constraint firstItem="iNi-RX-8KW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SYP-QP-Kh4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iNi-RX-8KW" secondAttribute="bottom" id="TDG-M9-jCa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bar1" destination="T2e-hM-OYC" id="yVh-0K-oBs"/>
+                        <outlet property="bar10" destination="7LB-BV-zdw" id="KcO-Jg-ZXq"/>
+                        <outlet property="bar11" destination="dHQ-9i-pE6" id="BRx-dR-7UL"/>
+                        <outlet property="bar12" destination="rhR-iM-iQI" id="FJU-gg-AEK"/>
+                        <outlet property="bar13" destination="mu8-Ne-oL9" id="pRQ-Ht-Sov"/>
+                        <outlet property="bar2" destination="wfJ-pz-zPg" id="mBZ-z8-mwf"/>
+                        <outlet property="bar3" destination="PBB-6D-pFE" id="nP7-EZ-Gek"/>
+                        <outlet property="bar4" destination="ZtX-Ce-l1z" id="O32-Zx-2hb"/>
+                        <outlet property="bar5" destination="Iyc-qL-NjH" id="6b4-NN-CIw"/>
+                        <outlet property="bar6" destination="9cn-jl-meG" id="G9r-PG-H4k"/>
+                        <outlet property="bar7" destination="0To-QS-WIX" id="otL-we-5Ef"/>
+                        <outlet property="bar8" destination="OL2-Ha-rtc" id="mDe-xF-SFo"/>
+                        <outlet property="bar9" destination="o2e-Mh-87j" id="HVr-mP-OZ5"/>
+                        <outlet property="titleText" destination="02V-nB-viC" id="TQW-NM-k9W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="3.1690140845070425"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
