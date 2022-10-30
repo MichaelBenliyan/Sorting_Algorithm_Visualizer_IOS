@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.heapSort(isHeap:i:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "barValues">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.selectionSort(i:minIndex:):ViewController.swift">
          <PersistentStrings>
             <PersistentString

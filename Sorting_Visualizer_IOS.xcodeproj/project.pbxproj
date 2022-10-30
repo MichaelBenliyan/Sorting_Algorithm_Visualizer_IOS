@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F49072A1290CDB8F00C4FD35 /* AllAlgoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49072A0290CDB8F00C4FD35 /* AllAlgoViewController.swift */; };
 		F49BE63F290055AF004581F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BE63E290055AF004581F4 /* AppDelegate.swift */; };
 		F49BE641290055AF004581F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BE640290055AF004581F4 /* SceneDelegate.swift */; };
 		F49BE643290055AF004581F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BE642290055AF004581F4 /* ViewController.swift */; };
 		F49BE646290055AF004581F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49BE644290055AF004581F4 /* Main.storyboard */; };
 		F49BE648290055B0004581F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49BE647290055B0004581F4 /* Assets.xcassets */; };
 		F49BE64B290055B0004581F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49BE649290055B0004581F4 /* LaunchScreen.storyboard */; };
+		F4EEF56B290E0023005239E7 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EEF56A290E0023005239E7 /* SegueFromRight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F49072A0290CDB8F00C4FD35 /* AllAlgoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAlgoViewController.swift; sourceTree = "<group>"; };
 		F49BE63B290055AF004581F4 /* Sorting_Visualizer_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sorting_Visualizer_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49BE63E290055AF004581F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49BE640290055AF004581F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		F49BE647290055B0004581F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49BE64A290055B0004581F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F49BE64C290055B0004581F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4EEF56A290E0023005239E7 /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				F49BE63E290055AF004581F4 /* AppDelegate.swift */,
 				F49BE640290055AF004581F4 /* SceneDelegate.swift */,
 				F49BE642290055AF004581F4 /* ViewController.swift */,
+				F49072A0290CDB8F00C4FD35 /* AllAlgoViewController.swift */,
 				F49BE644290055AF004581F4 /* Main.storyboard */,
 				F49BE647290055B0004581F4 /* Assets.xcassets */,
 				F49BE649290055B0004581F4 /* LaunchScreen.storyboard */,
 				F49BE64C290055B0004581F4 /* Info.plist */,
+				F4EEF56A290E0023005239E7 /* SegueFromRight.swift */,
 			);
 			path = Sorting_Visualizer_IOS;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49BE643290055AF004581F4 /* ViewController.swift in Sources */,
+				F4EEF56B290E0023005239E7 /* SegueFromRight.swift in Sources */,
+				F49072A1290CDB8F00C4FD35 /* AllAlgoViewController.swift in Sources */,
 				F49BE63F290055AF004581F4 /* AppDelegate.swift in Sources */,
 				F49BE641290055AF004581F4 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WK7U6YFJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sorting_Visualizer_IOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WK7U6YFJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sorting_Visualizer_IOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

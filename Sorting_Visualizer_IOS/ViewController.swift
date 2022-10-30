@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     var bars: [UIProgressView] = []
     var barValues : [Float] = []
     var maxVal = 10
-    
 //************************************************************
     // View Did Load
     
@@ -54,6 +53,10 @@ class ViewController: UIViewController {
         selectionSort()
     }
     
+    @IBAction func heapSortPressed(_ sender: UIButton) {
+        titleText.text = "Heap Sort"
+        heapSort()
+    }
     @IBAction func resetButtonPressed(_ sender: UIButton) {
         titleText.text = "Sorting Visualizer"
         fillBarValues()
@@ -110,7 +113,7 @@ class ViewController: UIViewController {
             }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) {
             if (i+1) > completed {
                 self.bars[i+1].progressTintColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
             } else {
@@ -165,7 +168,7 @@ class ViewController: UIViewController {
             }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
             if startPos == self.barValues.count-1 {
                 self.bars[startPos].progressTintColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
                 return
@@ -180,8 +183,124 @@ class ViewController: UIViewController {
             }
         }
         print(barValues)
+    }
+    
+    //Solution 1, Iteration, Time O(nlogn), Space O(1)
+    func heapSort(isHeap: Bool = false, f: Int? = nil, j: Int? = nil, k: Int? = nil, top: Float? = nil, sent: Bool = false) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            var finishedRound: Bool = false
+            let n = self.barValues.count;
+            var j = j
+            var f = f
+            var top = top
+            var k = k
+            if j == nil {
+                j = n/2-1
+            }
+            
+            let isHeap = isHeap
+            if !isHeap && j! >= 0 {
+                print(j!)
+                if k == nil {
+                    k = j
+                    top = self.barValues[k!]
+                }
+                //heapify for each j
+                //_______________________________________________
+                var larger: Int
+                if k! < n/2 { // from top down, swap with larger child
+                    let left = 2*k! + 1
+                    let right = 2*k! + 2
+                    if (right < n && self.self.barValues[right] > self.barValues[left]) {
+                        larger = right
+                    } else {
+                        larger = left
+                    }
+                    if (top! >= self.barValues[larger]) {
+                        self.barValues[k!] = top!;
+                        finishedRound = true
+                    } else {
+                        self.barValues[k!] = self.barValues[larger];
+                        k = larger;
+                        if k! < n/2 {
+                            self.heapSort(isHeap: isHeap, j: j, k: k, top: top)
+                        }
+                    }
+                }
+                if k! >= n/2 {
+                    self.barValues[k!] = top!;
+                    finishedRound = true
+                }
+                //_______________________________________________
+                //            heapify(size: n, i: j);
+//                if sent == false && j! <= 0 {
+//                    isHeap = true
+//                    j! -= 1
+//                    self.updateBars()
+//                    self.heapSort(isHeap: true, f: 0, sent: true)
+//                }
+                if finishedRound && j! > 0 {
+                    j! -= 1
+                    self.updateBars()
+                    self.heapSort(isHeap: false, j: j, k: nil)
+                } else if finishedRound && j! == 0 {
+                    self.bars[0].progressTintColor = #colorLiteral(red: 0.02275720797, green: 0.6887814999, blue: 0.4195303023, alpha: 1)
+                    self.updateBars()
+                    self.heapSort(isHeap: true, f: 0)
+                }
+            }
+            //sort by remove the largest and put at the end
+            if isHeap && f != nil && f! < n {
+                print("f: \(f!)")
+                let size = n-f!-1 //new size after remove last
+                self.barValues[size] = self.heapRemove(size: size, i: f!)//put the largest at the end
+                self.bars[size].progressTintColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+                if size >= 1 {
+                    self.bars[size-1].progressTintColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+                }
+                self.updateBars()
+                if f! < n {
+                    f! += 1
+                    self.heapSort(isHeap: isHeap, f: f)
+                } else {
+                    self.updateBars()
+                }
+            }
+            
+//            if isHeap && i != nil && i! >= n {
+//                return
+//            }
+        }
+    }
+    
+    //Remove the root from heap and heapify again, Time O(logn), Space O(1)
+    func heapRemove(size: Int,  i: Int) -> Float {
+        let max = barValues[0];
+        barValues[0] = barValues[size]; //put last at front
+        heapify(size: size, i: 0);
+        return max;
+    }
+    //Max heapify, Time O(logn), space O(1)
+    func heapify(size: Int, i: Int) {
+        let top = barValues[i]
+        var larger: Int
+        var i = i
         
-        
+        while i < size/2 { // from top down, swap with larger child
+            let left = 2*i + 1
+            let right = 2*i + 2
+            if (right < size && barValues[right] > barValues[left]) {
+                larger = right
+            } else {
+                larger = left
+            }
+            if (top >= barValues[larger]) {
+                break
+            }
+            barValues[i] = barValues[larger];
+            i = larger;
+        }
+        barValues[i] = top;
     }
     
 }

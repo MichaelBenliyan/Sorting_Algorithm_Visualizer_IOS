@@ -14,9 +14,89 @@
             filePath = "Sorting_Visualizer_IOS/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "selectionSort(i:minIndex:startPos:prevMin:)"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "selectionSort(i:minIndex:startPos:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87037B9C-1A9D-4922-9F3D-D706E9FE5417"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sorting_Visualizer_IOS/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "heapSort(isHeap:f:j:k:top:sent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BBEF37F5-F2DE-4474-B412-F161707BC9D3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sorting_Visualizer_IOS/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "heapSort(isHeap:f:j:k:top:sent:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BBEF37F5-F2DE-4474-B412-F161707BC9D3 - 6e7cf2706b07d68d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sorting_Visualizer_IOS.ViewController.heapSort(isHeap: Swift.Bool, i: Swift.Int, j: Swift.Optional&lt;Swift.Int&gt;, k: Swift.Optional&lt;Swift.Int&gt;, top: Swift.Optional&lt;Swift.Float&gt;) -&gt; ()"
+                  moduleName = "Sorting_Visualizer_IOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/home/Documents/GitHub/Sorting_Visualizer_IOS/Sorting_Visualizer_IOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "193"
+                  endingLineNumber = "193"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "BBEF37F5-F2DE-4474-B412-F161707BC9D3 - 3ee4e4a4575628ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Sorting_Visualizer_IOS.ViewController.heapSort(isHeap: Swift.Bool, i: Swift.Int, j: Swift.Optional&lt;Swift.Int&gt;, k: Swift.Optional&lt;Swift.Int&gt;, top: Swift.Optional&lt;Swift.Float&gt;) -&gt; ()"
+                  moduleName = "Sorting_Visualizer_IOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/home/Documents/GitHub/Sorting_Visualizer_IOS/Sorting_Visualizer_IOS/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "194"
+                  endingLineNumber = "194"
+                  offsetFromSymbolStart = "316">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "672BC7C3-9AED-4A55-B7A3-20455078D809"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sorting_Visualizer_IOS/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "heapSort(isHeap:f:j:k:top:sent:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
