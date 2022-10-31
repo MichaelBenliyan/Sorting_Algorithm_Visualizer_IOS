@@ -15,9 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UnicornVectorGradient_5" translatesAutoresizingMaskIntoConstraints="NO" id="C6L-iI-P1H">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VisualizerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HYe-AB-CPR">
                                 <rect key="frame" x="62.666666666666657" y="289.66666666666669" width="265" height="265.00000000000006"/>
                                 <constraints>
@@ -27,15 +24,12 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.95686274770000002" green="0.99607843159999998" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="HYe-AB-CPR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7Dm-j7-z8e"/>
                             <constraint firstItem="HYe-AB-CPR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7IL-rq-B9P"/>
-                            <constraint firstItem="C6L-iI-P1H" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8m5-bs-wj9"/>
-                            <constraint firstItem="C6L-iI-P1H" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="SU7-Gz-Owa"/>
                             <constraint firstItem="HYe-AB-CPR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kEE-R8-hGn"/>
-                            <constraint firstItem="C6L-iI-P1H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nSU-hv-sYZ"/>
                             <constraint firstItem="HYe-AB-CPR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rOl-hz-kZb"/>
-                            <constraint firstAttribute="bottom" secondItem="C6L-iI-P1H" secondAttribute="bottom" id="vXx-rb-Cxu"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,7 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="UnicornVectorGradient_5" width="2251" height="4001"/>
         <image name="VisualizerIcon" width="1024" height="1024"/>
     </resources>
 </document>

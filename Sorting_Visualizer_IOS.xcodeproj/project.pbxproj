@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F49072A1290CDB8F00C4FD35 /* AllAlgoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49072A0290CDB8F00C4FD35 /* AllAlgoViewController.swift */; };
+		F497C2D629102AFC000C3FFE /* BubbleSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F497C2D529102AFC000C3FFE /* BubbleSortViewController.swift */; };
 		F49BE63F290055AF004581F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BE63E290055AF004581F4 /* AppDelegate.swift */; };
 		F49BE641290055AF004581F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BE640290055AF004581F4 /* SceneDelegate.swift */; };
 		F49BE643290055AF004581F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49BE642290055AF004581F4 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		F49072A0290CDB8F00C4FD35 /* AllAlgoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAlgoViewController.swift; sourceTree = "<group>"; };
+		F497C2D529102AFC000C3FFE /* BubbleSortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortViewController.swift; sourceTree = "<group>"; };
 		F49BE63B290055AF004581F4 /* Sorting_Visualizer_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sorting_Visualizer_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49BE63E290055AF004581F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49BE640290055AF004581F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				F49BE649290055B0004581F4 /* LaunchScreen.storyboard */,
 				F49BE64C290055B0004581F4 /* Info.plist */,
 				F4EEF56A290E0023005239E7 /* SegueFromRight.swift */,
+				F497C2D529102AFC000C3FFE /* BubbleSortViewController.swift */,
 			);
 			path = Sorting_Visualizer_IOS;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F497C2D629102AFC000C3FFE /* BubbleSortViewController.swift in Sources */,
 				F49BE643290055AF004581F4 /* ViewController.swift in Sources */,
 				F4EEF56B290E0023005239E7 /* SegueFromRight.swift in Sources */,
 				F49072A1290CDB8F00C4FD35 /* AllAlgoViewController.swift in Sources */,
