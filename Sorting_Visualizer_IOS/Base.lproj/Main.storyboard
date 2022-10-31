@@ -405,7 +405,7 @@ Visualizer</string>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <segue destination="HSw-FI-LpU" kind="presentation" id="5A6-PQ-p9R"/>
+                                                    <segue destination="5q1-Ht-kMW" kind="presentation" id="ohk-4M-t5I"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -482,7 +482,7 @@ Visualizer</string>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="y2w-fY-pSX">
                                                 <rect key="frame" x="0.0" y="66" width="343" height="20.333333333333329"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: O(n^n)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4h-Cy-wmP">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: O(n^2)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4h-Cy-wmP">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="20.333333333333332"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -518,29 +518,20 @@ Bubble Sort works by passing through the list up to "n" times and checks each 2 
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pVY-uI-2sN">
-                                                        <rect key="frame" x="0.0" y="263.66666666666663" width="251" height="32"/>
+                                                        <rect key="frame" x="0.0" y="263.66666666666663" width="335" height="32"/>
                                                         <segments>
                                                             <segment title="Python"/>
                                                             <segment title="Javascript"/>
                                                             <segment title="Java"/>
+                                                            <segment title="C++"/>
                                                         </segments>
                                                         <connections>
                                                             <action selector="languageChangerPressed:" destination="lzq-Bv-fXi" eventType="valueChanged" id="HNF-wV-2ID"/>
                                                         </connections>
                                                     </segmentedControl>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vm-zT-WNg">
-                                                        <rect key="frame" x="0.0" y="294.66666666666663" width="343" height="156"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlaceHolder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vm-zT-WNg">
+                                                        <rect key="frame" x="0.0" y="294.66666666666663" width="343" height="15.666666666666686"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <string key="text">sorted = false
-while !sorted: 
-    i = 0
-    sorted = true
-    while i &lt; len(array)-1: 
-        if array[i] &gt; array[i+1]: 
-            #Swap Values if Unsorted
-            array[i], array[i+1] = array[i+1], array[i]
-            sorted = false
-        i += 1</string>
                                                         <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
                                                         <color key="textColor" systemColor="systemGreenColor"/>
                                                         <nil key="highlightedColor"/>
@@ -630,25 +621,10 @@ while !sorted:
             </objects>
             <point key="canvasLocation" x="1824.8" y="-734.48275862068965"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ScW-jS-eh3">
-            <objects>
-                <viewController id="HSw-FI-LpU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8gi-4Y-5bq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="EHa-Kh-bDM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tnM-SY-whH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1825" y="752"/>
-        </scene>
-        <!--Bubble Sort View Controller-->
+        <!--Selection Sort View Controller-->
         <scene sceneID="xmT-p2-vIP">
             <objects>
-                <viewController id="Tss-3s-VNO" customClass="BubbleSortViewController" customModule="Sorting_Visualizer_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tss-3s-VNO" customClass="SelectionSortViewController" customModule="Sorting_Visualizer_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ta6-9V-Alx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -683,7 +659,7 @@ while !sorted:
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="YrQ-Po-Uaw">
                                                 <rect key="frame" x="0.0" y="66" width="343" height="20.333333333333329"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: O(n^n)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy4-cz-jVz">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: O(n^2)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy4-cz-jVz">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="20.333333333333332"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -709,47 +685,38 @@ while !sorted:
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwP-QW-3Lx">
-                                                        <rect key="frame" x="0.0" y="20.333333333333329" width="343" height="223.33333333333337"/>
-                                                        <string key="text">Bubble Sort is a very basic sorting algorithm and often the first one learned by new developers. It is not recomended to be used in production code. 
+                                                        <rect key="frame" x="0.0" y="20.3333333333333" width="343" height="243.66666666666663"/>
+                                                        <string key="text">Selection Sort is a basic sorting algorithm. It is not recomended to be used in production code due to its poor efficiency. 
 
-Bubble Sort works by passing through the list up to "n" times and checks each 2 adjacent values. It then swaps the values if the first value is larger than the second, then continues to the next adjacent pair. 
+The selection sort algorithm sorts an array by repeatedly finding the minimum element from the unsorted part and putting it at the beginning. In every iteration of the selection sort, the minimum element from the unsorted subarray is picked and moved to the sorted subarray. 
 </string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dlF-NF-PUq">
-                                                        <rect key="frame" x="0.0" y="263.66666666666663" width="251" height="32"/>
+                                                        <rect key="frame" x="0.0" y="284" width="335" height="32"/>
                                                         <segments>
                                                             <segment title="Python"/>
                                                             <segment title="Javascript"/>
                                                             <segment title="Java"/>
+                                                            <segment title="C++"/>
                                                         </segments>
                                                         <connections>
                                                             <action selector="languageChangerPressed:" destination="Tss-3s-VNO" eventType="valueChanged" id="2Em-RP-M2P"/>
                                                         </connections>
                                                     </segmentedControl>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttG-DQ-H0n">
-                                                        <rect key="frame" x="0.0" y="294.66666666666663" width="343" height="156"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <string key="text">sorted = false
-while !sorted: 
-    i = 0
-    sorted = true
-    while i &lt; len(array)-1: 
-        if array[i] &gt; array[i+1]: 
-            #Swap Values if Unsorted
-            array[i], array[i+1] = array[i+1], array[i]
-            sorted = false
-        i += 1</string>
-                                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
-                                                        <color key="textColor" systemColor="systemGreenColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Implementation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPE-TW-x03">
-                                                        <rect key="frame" x="0.0" y="243.66666666666666" width="343" height="19.999999999999972"/>
+                                                        <rect key="frame" x="0.0" y="264" width="343" height="20"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlaceHolder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttG-DQ-H0n">
+                                                        <rect key="frame" x="0.0" y="315" width="343" height="15.666666666666686"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemGreenColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -829,7 +796,186 @@ while !sorted:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVG-q7-JES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="3"/>
+            <point key="canvasLocation" x="1824.8" y="2.9556650246305418"/>
+        </scene>
+        <!--Heap Sort View Controller-->
+        <scene sceneID="87p-j0-MmN">
+            <objects>
+                <viewController id="5q1-Ht-kMW" customClass="HeapSortViewController" customModule="Sorting_Visualizer_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="arW-lW-CB8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CT-Ie-C4Y">
+                                <rect key="frame" x="15" y="47" width="345" height="708"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kca-4f-i3F">
+                                <rect key="frame" x="16" y="47" width="343" height="708"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaL-gH-CzK">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ubr-2r-ChC"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="EV6-hX-3em">
+                                        <rect key="frame" x="0.0" y="1" width="343" height="680"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heap Sort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7r-Zr-SBB">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="65"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="oIK-IO-pze"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="dmo-Hb-0vL">
+                                                <rect key="frame" x="0.0" y="66" width="343" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: O(n*log(n))" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbq-a3-QjJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="171" height="20.333333333333332"/>
+                                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space: O(1)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skE-iV-9RH">
+                                                        <rect key="frame" x="172" y="0.0" width="171" height="20.333333333333332"/>
+                                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OH0-5s-NOA">
+                                                <rect key="frame" x="0.0" y="87.333333333333314" width="343" height="592.66666666666674"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHX-Ji-Yqr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um5-qI-I32">
+                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="343" height="385.66666666666669"/>
+                                                        <mutableString key="text">Heap Sort is a very efficient sorting algorithm. It relies on the use of the Heap Data Structure. The benefits to Heap Sort is its time and space complexity. Heap Sort sorts an array in place, meaning it uses no extra memory. A potential downside of Heap Sort is that it is unstable, meaning it can change the relative ordering of equivalent items. 
+
+The heap sort algorithm consists of two phases: 
+1. In the first phase the array is converted into a max heap. 
+2. In the second phase the highest element is placed at the end of the array and the remaining elements are used to create a new max heap.
+</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aSo-I3-KoX">
+                                                        <rect key="frame" x="0.0" y="426" width="335" height="32"/>
+                                                        <segments>
+                                                            <segment title="Python"/>
+                                                            <segment title="Javascript"/>
+                                                            <segment title="Java"/>
+                                                            <segment title="C++"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="languageChangerPressed:" destination="5q1-Ht-kMW" eventType="valueChanged" id="yyw-UD-BMF"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Implementation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWX-OF-hsR">
+                                                        <rect key="frame" x="0.0" y="406" width="343" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlaceHolder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYw-aS-m5E">
+                                                        <rect key="frame" x="0.0" y="457" width="343" height="15.666666666666686"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="trailing" secondItem="AxL-E0-rEf" secondAttribute="trailing" id="2u4-Dv-0Tw"/>
+                                                    <constraint firstItem="aSo-I3-KoX" firstAttribute="top" secondItem="AWX-OF-hsR" secondAttribute="bottom" id="4Vt-eB-zFO"/>
+                                                    <constraint firstItem="oYw-aS-m5E" firstAttribute="trailing" secondItem="AxL-E0-rEf" secondAttribute="trailing" id="6YZ-8O-GZQ"/>
+                                                    <constraint firstItem="oYw-aS-m5E" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="7ia-aD-Nzo"/>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="95G-ah-HYq"/>
+                                                    <constraint firstItem="aSo-I3-KoX" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="9EV-PF-bca"/>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="top" secondItem="gHX-Ji-Yqr" secondAttribute="bottom" id="AiM-AS-qWj"/>
+                                                    <constraint firstItem="oYw-aS-m5E" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="FUg-45-fci"/>
+                                                    <constraint firstItem="AWX-OF-hsR" firstAttribute="top" secondItem="um5-qI-I32" secondAttribute="bottom" id="Gsc-SA-lg2"/>
+                                                    <constraint firstItem="oYw-aS-m5E" firstAttribute="top" secondItem="aSo-I3-KoX" secondAttribute="bottom" id="HEO-FT-mI9"/>
+                                                    <constraint firstItem="AWX-OF-hsR" firstAttribute="trailing" secondItem="AxL-E0-rEf" secondAttribute="trailing" id="JWX-Mo-CXZ"/>
+                                                    <constraint firstItem="gHX-Ji-Yqr" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="MQI-Ps-4K7"/>
+                                                    <constraint firstItem="aSo-I3-KoX" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="MgS-8c-EL0"/>
+                                                    <constraint firstItem="aSo-I3-KoX" firstAttribute="top" secondItem="AWX-OF-hsR" secondAttribute="bottom" id="NdN-PU-ah4"/>
+                                                    <constraint firstItem="AWX-OF-hsR" firstAttribute="trailing" secondItem="AxL-E0-rEf" secondAttribute="trailing" id="ONs-mX-uem"/>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="trailing" secondItem="AxL-E0-rEf" secondAttribute="trailing" id="Rs5-Rr-IKR"/>
+                                                    <constraint firstItem="AWX-OF-hsR" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="SAb-Qz-g8S"/>
+                                                    <constraint firstItem="AWX-OF-hsR" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="UOH-l0-UJ6"/>
+                                                    <constraint firstItem="aSo-I3-KoX" firstAttribute="top" secondItem="AWX-OF-hsR" secondAttribute="bottom" id="VLC-Z1-ybH"/>
+                                                    <constraint firstItem="AxL-E0-rEf" firstAttribute="trailing" secondItem="gHX-Ji-Yqr" secondAttribute="trailing" id="c3d-Z7-G2z"/>
+                                                    <constraint firstItem="AWX-OF-hsR" firstAttribute="top" secondItem="um5-qI-I32" secondAttribute="bottom" id="elY-bN-ocb"/>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="fOe-td-Iw3"/>
+                                                    <constraint firstItem="AxL-E0-rEf" firstAttribute="trailing" secondItem="oYw-aS-m5E" secondAttribute="trailing" id="g4H-OC-d8o"/>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="gE3-WD-XS1"/>
+                                                    <constraint firstItem="oYw-aS-m5E" firstAttribute="top" secondItem="aSo-I3-KoX" secondAttribute="bottom" id="ihu-XJ-Zal"/>
+                                                    <constraint firstItem="gHX-Ji-Yqr" firstAttribute="top" secondItem="AxL-E0-rEf" secondAttribute="top" id="jH4-O4-yr4"/>
+                                                    <constraint firstItem="gHX-Ji-Yqr" firstAttribute="trailing" secondItem="AxL-E0-rEf" secondAttribute="trailing" id="nna-lO-NpO"/>
+                                                    <constraint firstItem="aSo-I3-KoX" firstAttribute="top" secondItem="um5-qI-I32" secondAttribute="bottom" constant="20" id="pD0-ol-ihv"/>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="qar-wA-2IZ"/>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="top" secondItem="gHX-Ji-Yqr" secondAttribute="bottom" id="qpb-iE-ZNM"/>
+                                                    <constraint firstItem="um5-qI-I32" firstAttribute="top" secondItem="gHX-Ji-Yqr" secondAttribute="bottom" id="rGw-ge-f0r"/>
+                                                    <constraint firstItem="gHX-Ji-Yqr" firstAttribute="top" secondItem="AxL-E0-rEf" secondAttribute="top" id="sh7-fE-Irz"/>
+                                                    <constraint firstItem="gHX-Ji-Yqr" firstAttribute="leading" secondItem="AxL-E0-rEf" secondAttribute="leading" id="uXD-IW-mwh"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="yW1-Jp-PMb"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="AxL-E0-rEf"/>
+                                            </scrollView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRy-4R-Q3f">
+                                        <rect key="frame" x="0.0" y="681" width="343" height="27"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EV6-hX-3em" firstAttribute="top" secondItem="xaL-gH-CzK" secondAttribute="bottom" id="7ch-2k-Hmq"/>
+                                    <constraint firstAttribute="trailing" secondItem="xaL-gH-CzK" secondAttribute="trailing" id="8Me-4X-hXq"/>
+                                    <constraint firstItem="EV6-hX-3em" firstAttribute="leading" secondItem="kca-4f-i3F" secondAttribute="leading" id="9c5-1u-9Cg"/>
+                                    <constraint firstItem="xaL-gH-CzK" firstAttribute="leading" secondItem="kca-4f-i3F" secondAttribute="leading" id="cDN-XZ-Wrc"/>
+                                    <constraint firstAttribute="trailing" secondItem="EV6-hX-3em" secondAttribute="trailing" id="n2K-HP-ITu"/>
+                                    <constraint firstItem="xaL-gH-CzK" firstAttribute="top" secondItem="kca-4f-i3F" secondAttribute="top" id="ofL-PP-xrn"/>
+                                    <constraint firstItem="EV6-hX-3em" firstAttribute="top" secondItem="xaL-gH-CzK" secondAttribute="bottom" id="rpJ-0l-qkK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dxo-NX-egN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dxo-NX-egN" firstAttribute="trailing" secondItem="6CT-Ie-C4Y" secondAttribute="trailing" constant="15" id="L8s-Oq-gmb"/>
+                            <constraint firstItem="kca-4f-i3F" firstAttribute="leading" secondItem="dxo-NX-egN" secondAttribute="leading" constant="16" id="Mpb-7g-46I"/>
+                            <constraint firstItem="6CT-Ie-C4Y" firstAttribute="top" secondItem="dxo-NX-egN" secondAttribute="top" id="Okf-W2-DfL"/>
+                            <constraint firstItem="6CT-Ie-C4Y" firstAttribute="leading" secondItem="dxo-NX-egN" secondAttribute="leading" constant="15" id="X03-Aq-SaX"/>
+                            <constraint firstItem="kca-4f-i3F" firstAttribute="trailing" secondItem="dxo-NX-egN" secondAttribute="trailing" constant="-16" id="XJj-mh-xbc"/>
+                            <constraint firstItem="kca-4f-i3F" firstAttribute="top" secondItem="dxo-NX-egN" secondAttribute="top" id="jMA-g2-ch6"/>
+                            <constraint firstItem="kca-4f-i3F" firstAttribute="bottom" secondItem="dxo-NX-egN" secondAttribute="bottom" id="knP-s4-ZU1"/>
+                            <constraint firstItem="dxo-NX-egN" firstAttribute="bottom" secondItem="6CT-Ie-C4Y" secondAttribute="bottom" id="nFT-lk-Nbf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nhV-fv-VDL"/>
+                    <connections>
+                        <outlet property="implementationLabel" destination="oYw-aS-m5E" id="PLU-Ph-VVu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgZ-DU-Jf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="742"/>
         </scene>
     </scenes>
     <resources>

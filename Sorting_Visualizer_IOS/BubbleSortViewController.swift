@@ -33,10 +33,29 @@ while (!sorted) {
         i ++;
     };
 };
+""", """
+int n = array.length;
+for (int i = 0; i < n - 1; i++)
+    for (int j = 0; j < n - i - 1; j++)
+        if (array[j] > array[j + 1]) {
+        // swap array[j+1] and array[j]
+            int temp = array[j];
+            array[j] = array[j + 1];
+            array[j + 1] = temp;
+        }
+""", """
+int i, j;
+int n = sizeof(array) / sizeof(array[0]);
+    for (i = 0; i < n - 1; i++)
+        // Last i elements are already in place
+        for (j = 0; j < n - i - 1; j++)
+            if (array[j] > array[j + 1])
+                swap(array[j], array[j + 1]);
 """]
     @IBOutlet weak var implementationLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        implementationLabel.text = implementationText[0]
     }
     
     @IBAction func languageChangerPressed(_ sender: UISegmentedControl) {
@@ -45,6 +64,10 @@ while (!sorted) {
             implementationLabel.text = implementationText[0]
         } else if language == "Javascript" {
             implementationLabel.text = implementationText[1]
+        } else if language == "Java" {
+            implementationLabel.text = implementationText[2]
+        } else if language == "C++" {
+            implementationLabel.text = implementationText[3]
         }
     }
 }
