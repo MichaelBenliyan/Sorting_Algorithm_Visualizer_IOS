@@ -25,6 +25,7 @@ while (!sorted) {
     sorted = true;
     while (i < array.length-1) {
         if (array[i] > array[i+1]) {
+            //Swap Values if Unsorted
             const temp = array[i];
             array[i] = array[i+1];
             array[i+1] = temp;
@@ -38,7 +39,7 @@ int n = array.length;
 for (int i = 0; i < n - 1; i++)
     for (int j = 0; j < n - i - 1; j++)
         if (array[j] > array[j + 1]) {
-        // swap array[j+1] and array[j]
+            //Swap Values if Unsorted
             int temp = array[j];
             array[j] = array[j + 1];
             array[j + 1] = temp;
@@ -47,9 +48,9 @@ for (int i = 0; i < n - 1; i++)
 int i, j;
 int n = sizeof(array) / sizeof(array[0]);
     for (i = 0; i < n - 1; i++)
-        // Last i elements are already in place
         for (j = 0; j < n - i - 1; j++)
             if (array[j] > array[j + 1])
+                //Swap Values if Unsorted
                 swap(array[j], array[j + 1]);
 """]
     @IBOutlet weak var implementationLabel: UILabel!
