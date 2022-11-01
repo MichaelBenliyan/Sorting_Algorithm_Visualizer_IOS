@@ -11,7 +11,7 @@ class HeapSortViewController: UIViewController {
     def heapSort(arrary):
         n = len(arr)
      
-        # Build Maxheap.
+        # Build Max Heap.
         for i in range(n//2 - 1, -1, -1):
             heapify(array, n, i)
      
@@ -40,57 +40,137 @@ class HeapSortViewController: UIViewController {
         if largest != i:
             array[i], array[largest] = array[largest], array[i]
      
-            # Heapify again.
+            # Heapify again
             heapify(array, n, largest)
     """, """
-var i, j, min_idx;
-for (i = 0; i < array.length-1; i++) {
-    min_idx = i;
-    #Find the smallest element in remaining unsorted array
-    for (j = i+1; j < array.length; j++){
-        if (array[j] < array[min_idx]) {
-            min_idx = j;
-        };
-        #Swap new minimum element with first element
-        const temp = arr[j];
-        arr[j] = arr[mid_idx];
-        arr[mid_idx] = temp;
-    };
-};
-""", """
-int n = array.length;
-    // One by one move boundary of unsorted subarray
-        for (int i = 0; i < n-1; i++)
-        {
-            // Find the minimum element in unsorted array
-            int min_idx = i;
-            for (int j = i+1; j < n; j++)
-                if (array[j] < array[min_idx])
-                    min_idx = j;
- 
-            // Swap the found minimum element with the first element
-            int temp = array[min_idx];
-            array[min_idx] = array[i];
-            array[i] = temp;
-        }
-""", """
-int i, j, min_idx;
-int n = sizeof(array)/sizeof(array[0]);
-    // One by one move boundary of unsorted subarray
-    for (i = 0; i < n-1; i++)
-    {
-        // Find the minimum element in unsorted array
-        min_idx = i;
-        for (j = i+1; j < n; j++)
-        if (array[j] < array[min_idx])
-            min_idx = j;
- 
-        // Swap the minimum element with the first element
-        if(min_idx!=i)
-            int temp = array[i];
-            array[i] = array[min_idx];
-            array[min_idx] = temp;
+function heapSort(array) {
+    let n = array.length;
+     
+    // Build Max Heap
+    for (var i = Math.floor(n / 2) - 1; i >= 0; i--)
+        heapify(array, n, i);
+
+    // Get top element and place at end
+    for (var i = n - 1; i > 0; i--) {
+        var temp = array[0];
+        array[0] = array[i];
+        array[i] = temp;
+
+        heapify(array, i, 0);
     }
+}
+
+function heapify(array, n, i) {
+    var largest = i;
+    //Left Child = 2*i + 1
+    //Right Child = 2*i + 2
+    let left = 2 * i + 1;
+    let right = 2 * i + 2;
+
+    //Check Left Child against root
+    if (left < N && array[left] > array[largest])
+        largest = left;
+
+    //Check Right Child against root
+    if (right < n && array[right] > array[largest])
+        largest = right;
+
+    //Swap if needed
+    if (largest != i) {
+        let swap = array[i];
+        array[i] = array[largest];
+        array[largest] = swap;
+
+        // Heapify again
+        heapify(array, n, largest);
+    }
+}
+""", """
+void heapSort(int array[])
+{
+    int n = array.length;
+    //Build Max Heap
+    for (int i = n / 2 - 1; i >= 0; i--)
+        heapify(array, n, i);
+
+    //Get top element and place at end
+    for (int i = n - 1; i > 0; i--) {
+        int temp = array[0];
+        array[0] = array[i];
+        array[i] = temp;
+
+        heapify(array, i, 0);
+    }
+}
+void heapify(int arr[], int N, int i)
+{
+    int largest = i;
+    //Left Child = 2*i + 1
+    //Right Child = 2*i + 2
+    int left = 2 * i + 1;
+    int right = 2 * i + 2;
+
+    //Check Left Child against root
+    if (left < n && array[left] > array[largest])
+        largest = left;
+
+    //Check Right Child against root
+    if (right < n && array[right] > array[largest])
+        largest = right;
+
+    //Swap if needed
+    if (largest != i) {
+        int swap = array[i];
+        array[i] = array[largest];
+        array[largest] = swap;
+
+        //Heapify again
+        heapify(array, n, largest);
+    }
+}
+""", """
+void heapSort(int array[], int n)
+{
+    // Build Max Heap
+    for (int i = n / 2 - 1; i >= 0; i--)
+        heapify(array, n, i);
+ 
+    //Get top element and place at end
+    for (int i = n - 1; i > 0; i--) {
+        int temp = array[0];
+        array[0] = array[i];
+        array[i] = temp;
+ 
+        heapify(array, i, 0);
+    }
+}
+
+void heapify(int array[], int n, int i)
+{
+    int largest = i;
+    //Left Child = 2*i + 1
+    //Right Child = 2*i + 2
+    int left = 2 * i + 1;
+    int right = 2 * i + 2;
+
+    //Check Left Child against root
+    if (left < n && array[left] > array[largest])
+        largest = left;
+ 
+    //Check Right Child against root
+    if (right < n && array[right] > array[largest])
+        largest = right;
+ 
+    //Swap if needed
+    if (largest != i) {
+        int swap = array[i];
+        array[i] = array[largest];
+        array[largest] = swap;
+ 
+        //Heapify again
+        heapify(array, n, largest);
+    }
+}
 """]
     @IBOutlet weak var implementationLabel: UILabel!
     override func viewDidLoad() {

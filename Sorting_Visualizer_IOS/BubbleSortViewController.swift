@@ -51,7 +51,9 @@ int n = sizeof(array) / sizeof(array[0]);
         for (j = 0; j < n - i - 1; j++)
             if (array[j] > array[j + 1])
                 //Swap Values if Unsorted
-                swap(array[j], array[j + 1]);
+                int temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
 """]
     @IBOutlet weak var implementationLabel: UILabel!
     override func viewDidLoad() {
