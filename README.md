@@ -5,9 +5,6 @@ This application also supports Dark Mode for all the late night coding sessions.
 
 
 ![Icon](Screenshots/Icon.png)
-
-# Built Using
-Swift, XCode
  
 # Screenshots
 ![HomePage](Screenshots/VisualizerHome.PNG)
