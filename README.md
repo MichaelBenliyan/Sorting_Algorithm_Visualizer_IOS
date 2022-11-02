@@ -13,7 +13,7 @@ Swift, XCode
 ![HomePage](Screenshots/VisualizerHome.PNG)
 ![SortingInProgress](Screenshots/SortingInProgress.PNG)
 ![FinishedSorting](Screenshots/FinishedSorting.PNG)
-![MoreInformationPage](Screenshots/MoreInformationPage.PNG)
+![MoreInformationPage](Screenshots/MoreInformation.PNG)
 ![InfoPage1](Screenshots/HeapSortInfo1.PNG)
 ![InfoPage2](Screenshots/HeapSortInfo2.PNG)
 ![DarkMode](Screenshots/DarkMode.PNG)
